@@ -1,6 +1,6 @@
 {
-    "appSecret": "",
-    "pageAccessToken": "",
-    "validationToken": "",
-    "serverURL": ""
+    "appSecret": "7e109f03c94a487ba25848984e86b5bd",
+    "pageAccessToken": "EAAZAJVDHilSABADkbmSNREvTLaYyNRs54ZA80pR6iHRryJDUCQPRALEYOrKtDtoK7WsqrIu9a3ijIrbkAxKOuVdlHuUa2ZBnbYFmhOX7T3eqAYoyZCOXm7Cj9xWiHEznSTX4CEG14Q2BuLV6VrOVg36dvL7gqJAjpRAserMn7gZDZD",
+    "validationToken": "manK1nd1634;",
+    "serverURL": "https://pdivasto-bot.herokuapp.com/webhook"
 }

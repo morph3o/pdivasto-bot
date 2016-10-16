@@ -245,7 +245,14 @@ function receivedMessage(event) {
     console.log("Quick reply for message %s with payload %s",
       messageId, quickReplyPayload);
 
-    sendTextMessage(senderID, "Quick reply tapped");
+    switch (quickReplyPayload){
+      case 'experience':
+        sendTextMessage(senderID, "Well, I have around 5 years of working in different fields such as Insurance, " +
+            "Software Development companies, Research groups, among others.");
+        break;
+      default:
+        sendTextMessage(senderID, "Quick reply tapped");
+    }
     return;
   }
 
@@ -695,21 +702,21 @@ function sendQuickReply(recipientId) {
       id: recipientId
     },
     message: {
-      text: "What's your favorite movie genre?",
+      text: "Hi! What would you like to know me?",
       quick_replies: [
         {
           "content_type":"text",
-          "title":"Action",
-          "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_ACTION"
+          "title":"Experience",
+          "payload":"experience"
         },
         {
           "content_type":"text",
-          "title":"Comedy",
+          "title":"Programming Languages",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_COMEDY"
         },
         {
           "content_type":"text",
-          "title":"Drama",
+          "title":"Hobbies",
           "payload":"DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_DRAMA"
         }
       ]
